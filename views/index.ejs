@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <title>Cocktail fo the day</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <title>Cocktail of the day</title>
 </head>
 <body>
-    <h1>Cocktail of the Day</h1>
-    <h3>API Playground Capstone App</h3>
+    <div class="decor"></div>
+    
+    <div>
+        <h1>Cocktail of the Day</h1>
+        <h3>API Playground Capstone App</h3>
+    </div>
+
+    <form action="/" method="POST">
+        <input type="submit" value="Get Your Drink">
+    </form>
+
+    <div>
+        <img src=<%= pic %> alt="Drink of the day">
+    </div>
+    <div>
+        <h2><%= drink %></h2>
+    </div>    
+
+    <div>
+        <% composition.map(i => { %>
+            <p>
+                <span><%= i.ing %></span>
+                <span><%= i.mes %></span>
+            </p>
+        <% }) %>
+    </div>
+
+    <div>
+        <p><%= instr %></p>
+    </div>
+    
+    
 </body>
 </html>
