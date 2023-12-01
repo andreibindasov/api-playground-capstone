@@ -27,7 +27,7 @@
     <div class="wrapper">
         <div>
             <% composition.map(i => { %>
-                <p>
+                <p class="comp">
                     <span><%= i.ing %></span>
                     <span><%= i.mes %></span>
                 </p>
@@ -35,13 +35,15 @@
         </div>
     
         <div>
-            <img src=<%= pic %> alt="Drink of the day">
-            <h2><%= drink %></h2>
+            <img class="pic" src=<%= pic %> alt="Drink of the day">
+            
         </div>
     
-        <div>
-            <p><%= instr %></p>
-        </div>
+        
+    </div>
+    <h2><%= drink %></h2>
+    <div>
+        <p class="instr"><%= instr %></p>
     </div>
     
 

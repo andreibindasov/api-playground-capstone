@@ -41,6 +41,9 @@ svg text {
 	stroke: #365FA0;
 	font-size: 4.5rem;
 }
+
+
+
 @keyframes stroke {
 	0%   {
 		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
@@ -58,7 +61,8 @@ svg text {
     display: flex;
     align-items: center;
     justify-content: space-around;
-};
+}
+
 .subTitle{
     margin-bottom: .6rem;
     margin-right: 1.5rem;
@@ -89,8 +93,9 @@ p{
     font-style: italic;
     font-weight: 100;
 }
-p:last-child{
+.instr{
     margin-top: 1.5rem;
+    padding: 0 1rem;
 }
 
 input{
@@ -150,4 +155,23 @@ span{
     z-index: -1;
     margin: -3rem;
     overflow: hidden;
+}
+
+@media screen and (max-width:800px) {
+    svg text {
+        font-size: 2.7rem;
+    }
+    .wrapper{
+        margin: 0 1rem;
+    }
+    .pic{
+        height: 9rem;
+        width: 9rem;
+    }
+    
+    .comp{
+        font-size: .6rem;
+    }
+    
+        
 }
