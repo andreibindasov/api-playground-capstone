@@ -7,7 +7,7 @@ body{
     min-height: 100vh;
     background: #99ddff;
     color: #00458b;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2rem;
 
     display: flex;
@@ -19,18 +19,74 @@ body{
 }
 
 div{
-    margin: 1.5rem;
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    height: 12rem;
+    text-align: center;
+    align-items: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 6s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 4.5rem;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+/* .wrapper {background-color: #FFFFFF}; */
+.subTitle{
+    margin-bottom: .6rem;
+    margin-right: 1.5rem;
+    width: 100%;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+h1{
+    background: #00458b;
+    background: linear-gradient(to top, #00458b 0%, #99ddff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
 }
 
 h2{
     color: whitesmoke;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, .6);
+    margin-bottom: 1.5rem;
 }
 
 p{
     font-size: 1rem;
     font-style: italic;
     font-weight: 100;
+}
+p:last-child{
+    margin-top: 1.5rem;
 }
 
 input{
@@ -44,6 +100,7 @@ input{
     color: whitesmoke;
 
     transition: all .3s ease-in-out;
+    margin-bottom: 1.5rem;
 }
 input:hover{
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
@@ -54,7 +111,7 @@ div img{
     height: 18rem;
     width: 18rem;
     border-radius: 50%;
-
+    margin-bottom: 1.5rem;
 }
 
 span{
@@ -69,10 +126,24 @@ span{
     width: 100%;
     height: 100%;
     background-color: #3fd2c7;
-    opacity: .45;
-    position: fixed;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 53% 100%);
-    transform: translateX(69%);
+    opacity: .25;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%, 97% 46%);
+    transform: translateX(0%);
+    z-index: -1;
+    margin: -3rem;
+    overflow: hidden;
+}
+.decor2{
+    clip-path: polygon(0 0, 100% 100%, 50% 100%, 0 100%);
+    width: 100%;
+    height: 100%;
+    background-color: #00458b;
+    opacity: .15;
+    position: absolute;
+    
+    transform: translateX(0%);
+    z-index: -1;
     margin: -3rem;
     overflow: hidden;
 }
