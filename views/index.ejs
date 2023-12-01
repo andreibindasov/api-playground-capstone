@@ -24,25 +24,27 @@
         <input type="submit" value="Get Your Drink">
     </form>
 
-    <div>
-        <img src=<%= pic %> alt="Drink of the day">
+    <div class="wrapper">
+        <div>
+            <% composition.map(i => { %>
+                <p>
+                    <span><%= i.ing %></span>
+                    <span><%= i.mes %></span>
+                </p>
+            <% }) %>
+        </div>
+    
+        <div>
+            <img src=<%= pic %> alt="Drink of the day">
+            <h2><%= drink %></h2>
+        </div>
+    
+        <div>
+            <p><%= instr %></p>
+        </div>
     </div>
-    <div>
-        <h2><%= drink %></h2>
-    </div>    
+    
 
-    <div>
-        <% composition.map(i => { %>
-            <p>
-                <span><%= i.ing %></span>
-                <span><%= i.mes %></span>
-            </p>
-        <% }) %>
-    </div>
-
-    <div>
-        <p><%= instr %></p>
-    </div>
     <div class="decor"></div>
     <div class="decor2"></div>
     

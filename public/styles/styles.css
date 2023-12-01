@@ -54,7 +54,11 @@ svg text {
 	}
 }
 
-/* .wrapper {background-color: #FFFFFF}; */
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+};
 .subTitle{
     margin-bottom: .6rem;
     margin-right: 1.5rem;
