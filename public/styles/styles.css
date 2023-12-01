@@ -68,7 +68,7 @@ svg text {
     margin-right: 1.5rem;
     width: 100%;
     text-align: right;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
 
 }
@@ -172,6 +172,8 @@ span{
     .comp{
         font-size: .6rem;
     }
-    
+    .subTitle{
+        font-size: .6rem;
+    }
         
 }
