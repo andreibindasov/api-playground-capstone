@@ -88,6 +88,6 @@ app.post("/", (req, res)=> {
 })
 
 
-app.listen(3033, ()=>{
+app.listen(process.env.port || 3033, ()=>{
     console.log("running...")
 })
